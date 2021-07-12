@@ -1,0 +1,55 @@
+{
+  "name": "trekord",
+  "version": "0.0.0",
+  "description": "Self-hosted Travel Journal",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "webpack -c webpack.config.js --mode production",
+    "build:server": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perry-mitchell/trekord.git"
+  },
+  "keywords": [
+    "self-hosted",
+    "travel",
+    "trek",
+    "journal",
+    "diary"
+  ],
+  "author": "Perry Mitchell <perry@perrymitchell.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/perry-mitchell/trekord/issues"
+  },
+  "homepage": "https://github.com/perry-mitchell/trekord#readme",
+  "dependencies": {
+    "argon2": "^0.28.2",
+    "express": "^4.17.1",
+    "express-promise-router": "^4.1.0",
+    "express-session": "^1.17.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.3.0",
+    "@types/react": "^17.0.14",
+    "@types/react-dom": "^17.0.9",
+    "css-loader": "^5.2.6",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.1.0",
+    "pug": "^3.0.2",
+    "pug-loader": "^2.4.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "sass": "^1.35.2",
+    "sass-loader": "^12.1.0",
+    "ts-loader": "^9.2.3",
+    "typescript": "^4.3.5",
+    "webpack": "^5.44.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
